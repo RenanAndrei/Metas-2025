@@ -26,6 +26,13 @@ body{
     font-size: 32px;
 }
 
+.titulo-principal {
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+
+}
+
 .botao {
     background-color: var(--botao-inativo);
     color: var(--branco);
@@ -39,5 +46,17 @@ body{
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
+    
+}
+
+.botoes {
+    display: block;
+}
+
+@media screen and ( min-width: 768px) {
+    .botoes {
+        display: flex;
+    }
+
     
 }
