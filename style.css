@@ -44,7 +44,7 @@ body{
     border-bottom: 2px solid var(--botao-ativo);
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
-    border-top: none;
+     border-top: none;
     
 }
 .botao:first-child {
@@ -55,7 +55,7 @@ body{
     display: block;
 }
 
-.ativo{
+.botao.ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
 }
@@ -67,6 +67,27 @@ body{
 
 }
 
+.aba-conteudo.ativo {
+    display: block;
+}
+
+.aba-conteudo {
+    display: none;
+}
+
+.aba-conteudo-titulo-principal {
+    text-align: center;
+    font-size: 24px;
+
+}
+
+
+.aba-conteudo-titulo-secundario {
+    text-align: center;
+    font-size: 16px;
+    color: var(--verde);
+    text-transform: uppercase;
+}
 
 
 
