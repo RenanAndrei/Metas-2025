@@ -17,6 +17,16 @@ console.log(botoes);
 
 const contadores = document.querySelectorAll('.contador');
 const tempoObjetivo1 = new Date('2024-10-05T00:00:00');
-let tempoAtual = new Date();
 
-contadores[0].textContent = tempoObjetivo1-tempoAtual;
+
+contadores[0].textContent = calculaTempo(tempoObjetivo1);
+
+function calculaTempo(tempoObjetivo1) {
+    let tempoAtual = new Date();
+    let tempoFinal = tempoObjetivo1-tempoAtual;
+    let segundos = Math.floor(tempoFinal / 1000);
+    let minutos = Mat.floor(segundos / 60);
+    let horas = Mat.floor(minutos / 60);
+    let dias = Mat.floor(horas / 24);
+    return dias;
+}
