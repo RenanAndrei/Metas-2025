@@ -27,6 +27,9 @@ for (let i = 0; i < contadores. length; i++) {
     contadores[i].textContent = calculaTempo(tempos[i]);
 }
 
+atualizaConometro();
+setInterval(atualizaConometro, 1000);
+
 function calculaTempo(tempoObjetivo1) {
     let tempoAtual = new Date();
     let tempoFinal = tempoObjetivo1-tempoAtual;
