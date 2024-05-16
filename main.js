@@ -37,7 +37,7 @@ atualizaConometro();
 setInterval(atualizaConometro, 1000);s
 }
 
-//comecaConometro();
+comecaConometro();
 
 function calculaTempo(tempoObjetivo1) {
     let tempoAtual = new Date();
